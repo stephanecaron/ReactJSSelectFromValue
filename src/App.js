@@ -12,9 +12,9 @@ function App() {
          ]);
 
   const [selected, setSelected] = useState(emp[0].name);
-  const selectedEmp = emp.find(({name}) => name === selected);
-  const experience = selectedEmp ? selectedEmp.experience : '';
-  const empName = selectedEmp ? selectedEmp.name : '';
+/*   const selectedEmp = emp.find(({name}) => name === selected); */
+/*   const experience = selectedEmp ? selectedEmp.experience : '';
+  const empName = selectedEmp ? selectedEmp.name : ''; */
 
   return (
     <div className="App">
@@ -22,8 +22,8 @@ function App() {
 
           <div>
       <DynamicSelect emp={emp} setSelected={setSelected} />
-      <p>Name: {empName}</p>
-      <p>Experience: {experience}</p>
+{/*       <p>Name: {empName}</p>
+      <p>Experience: {experience}</p> */}
     </div>
 
       </header>
